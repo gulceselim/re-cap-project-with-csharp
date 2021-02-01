@@ -46,13 +46,13 @@ Description | string
 Variable Name | Data Type
 ------------ | -------------
 Id | int
-ColorName | int
+ColorName | string
 
 #### Brand
 Variable Name | Data Type
 ------------ | -------------
 Id | int
-BrandName | int
+BrandName | string
 
 ### Output
 ![Output](https://user-images.githubusercontent.com/43720773/106459695-4bdaa800-64a3-11eb-82fe-8c5eee83aec5.jpg)
