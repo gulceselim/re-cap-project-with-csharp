@@ -41,9 +41,9 @@ namespace ConsoleUI
                 Console.WriteLine($"{car.Id}\t{car.ColorId}\t\t{car.BrandId}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
             }
 
-            carManager.Add(new Car { Id = 5, BrandId = 1, ColorId = 2, DailyPrice = 300, ModelYear = 2021, Decription = "Otomatik Dizel" });
+            carManager.Add(new Car { Id = 5, BrandId = 1, ColorId = 2, DailyPrice = 300, ModelYear = "2021", Decription = "Otomatik Dizel" });
             carManager.Delete(3);
-            Car carForUpdate = new Car() { Id = 1, BrandId = 3, ColorId = 3, DailyPrice = 350, ModelYear = 2012, Decription = "Otomatik Hybrid"};
+            Car carForUpdate = new Car() { Id = 1, BrandId = 3, ColorId = 3, DailyPrice = 350, ModelYear = "2012", Decription = "Otomatik Hybrid"};
             carManager.Update(carForUpdate);
 
 
