@@ -15,10 +15,10 @@ namespace DataAccess.Concrete.InMemory
         {
             _cars = new List<Car>()
             {
-                new Car{Id= 1, BrandId = 1, ColorId = 1, DailyPrice = 200, ModelYear = 2012, Decription = "Otomatik Dizel" },    
-                new Car{Id= 2, BrandId = 2, ColorId = 2, DailyPrice = 50, ModelYear = 2010, Decription = "Manuel Benzin" },
-                new Car{Id= 3, BrandId = 2, ColorId = 1, DailyPrice = 100, ModelYear = 2019, Decription = "Manuel Dizel" },
-                new Car{Id= 4, BrandId = 3, ColorId = 2, DailyPrice = 150, ModelYear = 2018, Decription = "Otomatik Benzin" },
+                new Car{Id= 1, BrandId = 1, ColorId = 1, DailyPrice = 200, ModelYear = "2012", Decription = "Otomatik Dizel" },    
+                new Car{Id= 2, BrandId = 2, ColorId = 2, DailyPrice = 50, ModelYear = "2010", Decription = "Manuel Benzin" },
+                new Car{Id= 3, BrandId = 2, ColorId = 1, DailyPrice = 100, ModelYear = "2019", Decription = "Manuel Dizel" },
+                new Car{Id= 4, BrandId = 3, ColorId = 2, DailyPrice = 150, ModelYear = "2018", Decription = "Otomatik Benzin" },
             };
         }
 
