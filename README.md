@@ -31,5 +31,28 @@
 ### UI Layer (Console)
 1. [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)
 
+### Tables
+#### Car
+Variable Name | Data Type
+------------ | -------------
+Id | int
+BrandId | int
+ColorId | int
+ModelYear | string
+DailyPrice | decimal
+Description | string
+
+#### Color
+Variable Name | Data Type
+------------ | -------------
+Id | int
+ColorName | int
+
+#### Brand
+Variable Name | Data Type
+------------ | -------------
+Id | int
+BrandName | int
+
 ### Output
 ![Output](https://user-images.githubusercontent.com/43720773/106459695-4bdaa800-64a3-11eb-82fe-8c5eee83aec5.jpg)
