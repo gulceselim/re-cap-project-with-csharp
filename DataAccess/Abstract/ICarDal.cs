@@ -13,7 +13,7 @@ namespace DataAccess.Abstract
         List<Car> GetAllByBrand(int brandId);
         void Add(Car car);
         void Update(Car car);
-        void Delete(Car car);
+        void Delete(int id);
 
     }
 }
