@@ -29,7 +29,6 @@
 1. [ILoggerService](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/ICarDal.cs)
   
 ### UI Layer (Console)
-  - Bu katman kullanıcı ile etkileşimin yapıldığı katmandır. Ben Console uygulaması yaptığım için adına Console koydum fakat bu Windows Form uygulamasıda olabilir veya bir Web projesi olabilirdi.
 1. [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)
 
 ### Output
