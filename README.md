@@ -12,21 +12,38 @@
 
 #### Abstract Classes
 1. [IEntity.cs](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Entities/Abstract)
-    
+
+#### DTO Classes
+1. [CarDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Dto/CarDto.cs)
+
 ### Business Layer
 #### Concrete Classes
 1. [CarManager.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs)
+2. [BrandManager.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs)
+3. [CarDtoManager.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarDtoManager.cs)
+4. [ColorManager.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/ColorManager.cs)
   
 #### Abstract Classes
 1. [ICarService.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Abstract/ICarService.cs)
+2. [ICarDtoService.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Abstract/ICarDtoService.cs)
+3. [IBrandService.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Abstract/IBrandService.cs)
+4. [IColorService.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Abstract/IColorService.cs)
+5. [IGenericService.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Abstract/IGenericService.cs)
 
 ### DataAccess Layer
 - Memory üzerinde çalıştığım için ayrı bir klasör oluşturdum. Eğer ilerde Entity Framework ile çalışmaya başlarsam (ki bu projede kullanacağız), ona ait olan dosyaları EntityFramework klasörü içinde tutacağım.
 #### Concrete Classes
 1. [InMemory/InMemoryCarDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/InMemory/InMemoryCarDal.cs)
+2. [InMemory/InMemoryBrandDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/InMemory/InMemoryBrandDal.cs)
+3. [InMemory/InMemoryCarDtoDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/InMemory/InMemoryCarDtoDal.cs)
+4. [InMemory/InMemoryColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/InMemory/InMemoryColorDal.cs)
 
 #### Abstract Classes
-1. [ILoggerService](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/ICarDal.cs)
+1. [ICarDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/ICarDal.cs)
+2. [IBrandDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IBrandDal.cs)
+3. [ICarDtoDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/ICarDtoDal.cs)
+4. [IColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IColorDal.cs)
+5. [IGenericDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IGenericDal.cs)
   
 ### UI Layer (Console)
 1. [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)
@@ -38,6 +55,16 @@ Variable Name | Data Type
 Id | int
 BrandId | int
 ColorId | int
+ModelYear | string
+DailyPrice | decimal
+Description | string
+
+#### CarDto
+Variable Name | Data Type
+------------ | -------------
+Id | int
+BrandName | string
+ColorName | string 
 ModelYear | string
 DailyPrice | decimal
 Description | string
@@ -55,4 +82,5 @@ Id | int
 BrandName | string
 
 ### Output
-![Output](https://user-images.githubusercontent.com/43720773/106459695-4bdaa800-64a3-11eb-82fe-8c5eee83aec5.jpg)
+![Console Output](https://user-images.githubusercontent.com/43720773/106571437-353a5c80-6548-11eb-9e98-fb96dd3cbf7d.jpg)
+
