@@ -10,11 +10,15 @@ namespace ConsoleUI
         static void Main(string[] args)
         {
             CarManager carManager = new CarManager(new InMemoryCarDal());
+            BrandManager brandManager = new BrandManager(new InMemoryBrandDal());
+            ColorManager colorManager = new ColorManager(new InMemoryColorDal());
+            CarDtoManager carDtoManager = new CarDtoManager(new InMemoryCarDtoDal(carManager.GetAll(), brandManager.GetAll(), colorManager.GetAll()));
+            
 
-            Console.WriteLine("Bütün Arabalar \nId\tColor Id\tBrand Id\tModel Year\tDaily Price\tDescription");
-            foreach (var car in carManager.GetAll())
+            Console.WriteLine("Bütün Arabalar \nId\tColor Name\tBrand Name\tModel Year\tDaily Price\tDescription");
+            foreach (var car in carDtoManager.GetAll())
             {
-                Console.WriteLine($"{car.Id}\t{car.ColorId}\t\t{car.BrandId}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
+                Console.WriteLine($"{car.Id}\t{car.ColorName}\t\t{car.BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
             }
 
             Console.WriteLine("\n\nBrand Id'si 1 olan arabalar: \nId\tColor Id\tBrand Id\tModel Year\tDaily Price\tDescription");
@@ -36,9 +40,9 @@ namespace ConsoleUI
 
 
             Console.WriteLine("\n\nDeğişiklikten Önce: \nId\tColor Id\tBrand Id\tModel Year\tDaily Price\tDescription");
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carDtoManager.GetAll())
             {
-                Console.WriteLine($"{car.Id}\t{car.ColorId}\t\t{car.BrandId}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
+                Console.WriteLine($"{car.Id}\t{car.ColorName}\t\t{car.BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
             }
 
             carManager.Add(new Car { Id = 5, BrandId = 1, ColorId = 2, DailyPrice = 300, ModelYear = "2021", Decription = "Otomatik Dizel" });
@@ -48,9 +52,9 @@ namespace ConsoleUI
 
 
             Console.WriteLine("\n\nDeğişiklikten Sonra: \nId\tColor Id\tBrand Id\tModel Year\tDaily Price\tDescription");
-            foreach (var car in carManager.GetAll())
+            foreach (var car in carDtoManager.GetAll())
             {
-                Console.WriteLine($"{car.Id}\t{car.ColorId}\t\t{car.BrandId}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
+                Console.WriteLine($"{car.Id}\t{car.ColorName}\t\t{car.BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Decription}");
             }
 
         }
