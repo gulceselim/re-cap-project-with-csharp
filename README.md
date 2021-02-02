@@ -2,6 +2,7 @@
 
 - Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Şimdilik Car, Brand ve Color nesnelerinden ve onun operasyonlarından oluşan bu küçük proje zamanla geliştirilecektir. 
 - Bir önceki projemde N-Katmanlı Mimari yapısını kullanmıştım ve [README.md](https://github.com/gulceselim/ReCapDemo/blob/master/README.md) dosyasında elimden geldiğince açıklamaya çalışmıştım isterseniz bakabilirsiniz.
+- Bu projede farklı olarak, classlarımdaki operasyonların tekrarını önlemek için Generic class'ları kullandım.
 
 
 ### Entities Layer
@@ -84,3 +85,5 @@ BrandName | string
 ### Output
 ![Console Output](https://user-images.githubusercontent.com/43720773/106571437-353a5c80-6548-11eb-9e98-fb96dd3cbf7d.jpg)
 
+### Files
+![Files](https://user-images.githubusercontent.com/43720773/106573499-c7436480-654a-11eb-9bbf-48e2c5b2c98f.jpg)
