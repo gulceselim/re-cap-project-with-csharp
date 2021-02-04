@@ -9,6 +9,7 @@
 ## Changes
 - Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
 - EntityFramework dosyaları eklendi ✔
+- [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔
 
 ## Layers
 ### Entities Layer
