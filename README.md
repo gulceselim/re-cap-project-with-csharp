@@ -81,7 +81,7 @@ BrandId | int
 BrandName | string
 
 ## Output
-![Console Output](https://user-images.githubusercontent.com/43720773/106918708-7f733780-671a-11eb-8f5d-cd6880549af4.jpg)
+![Console Output](https://user-images.githubusercontent.com/43720773/106929084-fca3aa00-6724-11eb-877c-8f66c0a7f6d9.jpg)
 
 ## Files
 ![Files](https://user-images.githubusercontent.com/43720773/106918756-8bf79000-671a-11eb-9b60-4e20d46ed1d8.jpg)
