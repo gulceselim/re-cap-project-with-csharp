@@ -21,15 +21,20 @@ namespace Business.Concrete
             _colorDal.Add(entity);
         }
 
-        public void Delete(int id)
+        public void Delete(Color color)
         {
-            _colorDal.Delete(id);
+            _colorDal.Delete(color);
         }
 
         public List<Color> GetAll()
         {
             return _colorDal.GetAll();
 
+        }
+
+        public Color GetById(int id)
+        {
+            return _colorDal.Get(c => c.ColorId == id);
         }
 
         public void Update(Color entity)

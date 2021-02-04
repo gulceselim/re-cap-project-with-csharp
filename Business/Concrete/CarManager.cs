@@ -21,9 +21,9 @@ namespace Business.Concrete
             _carDal.Add(car);
         }
 
-        public void Delete(int id)
+        public void Delete(Car car)
         {
-            _carDal.Delete(id);
+            _carDal.Delete(car);
         }
 
         public List<Car> GetAll()
@@ -31,19 +31,31 @@ namespace Business.Concrete
             return _carDal.GetAll();
         }
 
-        public List<Car> GetAllByBrand(int brandId)
+        public List<Car> GetAllByBrandId(int id)
         {
-            return _carDal.GetAllByBrand(brandId);
+            return _carDal.GetAll(c => c.BrandId == id);
         }
 
-        public List<Car> GetAllByColor(int colorId)
+        public List<Car> GetAllByColorId(int id)
         {
-            return _carDal.GetAllByColor(colorId);
+            return _carDal.GetAll(c => c.ColorId == id);
+
+        }
+
+        public List<Car> GetByDailyPrice(decimal min, decimal max)
+        {
+            return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
+
         }
 
         public Car GetById(int id)
         {
-            return _carDal.GetById(id);
+            return _carDal.Get(c => c.CarId == id);
+        }
+
+        public List<Car> GetByModelYear(string year)
+        {
+            return _carDal.GetAll(c => c.ModelYear.Contains(year) == true);
         }
 
         public void Update(Car car)
