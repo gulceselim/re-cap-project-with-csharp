@@ -40,27 +40,12 @@ namespace ConsoleUI
             foreach (var car in carManager.GetByDailyPrice(100, 165))
             {
                 Console.WriteLine($"{car.CarId}\t{colorManager.GetById(car.ColorId).ColorName}\t\t{brandManager.GetById(car.BrandId).BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Descriptions}");
-            } 
+            }
 
+            Console.WriteLine("\n");
 
-
-            //Console.WriteLine("\n\nDeğişiklikten Önce: \nId\tColor Name\tBrand Name\tModel Year\tDaily Price\tDescriptions");
-            //foreach (var car in carManager.GetAll())
-            //{
-            //    Console.WriteLine($"{car.CarId}\t{colorManager.GetById(car.ColorId).ColorName}\t\t{brandManager.GetById(car.BrandId).BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Descriptions}");
-            //}
-
-            ////carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = 300, ModelYear = "2021", Descriptions = "Otomatik Dizel" });
-            ////carManager.Delete(carManager.GetById(3));
-            ////Car carForUpdate = new Car() { CarId = 1, BrandId = 3, ColorId = 3, DailyPrice = 350, ModelYear = "2012", Descriptions = "Otomatik Hybrid" };
-            ////carManager.Update(carForUpdate);
-
-
-            //Console.WriteLine("\n\nDeğişiklikten Sonra: \nId\tColor Name\tBrand Name\tModel Year\tDaily Price\tDescriptions");
-            //foreach (var car in carManager.GetAll())
-            //{
-            //    Console.WriteLine($"{car.CarId}\t{colorManager.GetById(car.ColorId).ColorName}\t\t{brandManager.GetById(car.BrandId).BrandName}\t\t{car.ModelYear}\t\t{car.DailyPrice}\t\t{car.Descriptions}");
-            //}
+            carManager.Add(new Car { BrandId = 1, ColorId = 2, DailyPrice = -300, ModelYear = "2021", Descriptions = "Otomatik Dizel" });
+            brandManager.Add(new Brand { BrandName = "a" });
 
         }
     }
