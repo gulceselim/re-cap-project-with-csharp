@@ -9,7 +9,7 @@
 - **Bir önceki projemde N-Katmanlı Mimari yapısını kullanmıştım ve [README.md](https://github.com/gulceselim/ReCapDemo/blob/master/README.md) dosyasında elimden geldiğince açıklamaya çalışmıştım isterseniz bakabilirsiniz.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
-## 🛠 Changes
+## 🛠 Recent Changes
 - Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
 - EntityFramework dosyaları eklendi ✔
 - [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
