@@ -48,8 +48,15 @@ namespace Business.Concrete
 
         public void Update(Brand brand)
         {
-            _brandDal.Update(brand);
-            Console.WriteLine("Marka başarıyla Güncellendi.");
+            if (brand.BrandName.Length >= 2)
+            {
+                _brandDal.Update(brand);
+                Console.WriteLine("Marka başarıyla Güncellendi.");
+            }
+            else
+            {
+                Console.WriteLine($"Lütfen marka isminin uzunluğunu 1 karakterden fazla giriniz. Girdiğiniz marka ismi : {brand.BrandName}");
+            }
 
         }
     }

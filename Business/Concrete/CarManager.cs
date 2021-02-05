@@ -70,8 +70,15 @@ namespace Business.Concrete
 
         public void Update(Car car)
         {
-            _carDal.Update(car);
-            Console.WriteLine("Araba başarıyla güncellendi.");
+            if (car.DailyPrice > 0)
+            {
+                _carDal.Update(car);
+                Console.WriteLine("Araba başarıyla güncellendi.");
+            }
+            else
+            {
+                Console.WriteLine($"Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer : {car.DailyPrice}");
+            }
         }
     }
 }
