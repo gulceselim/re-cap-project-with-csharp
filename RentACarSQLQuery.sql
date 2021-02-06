@@ -5,8 +5,8 @@
 	ModelYear nvarchar(25),
 	DailyPrice decimal,
 	Descriptions nvarchar(25),
-	FOREIGN KEY (BrandID) REFERENCES Colors(ColorID),
-	FOREIGN KEY (ColorID) REFERENCES Brands(BrandID)
+	FOREIGN KEY (ColorID) REFERENCES Colors(ColorID),
+	FOREIGN KEY (BrandID) REFERENCES Brands(BrandID)
 )
 
 CREATE TABLE Colors(
@@ -36,6 +36,6 @@ VALUES
 
 INSERT INTO Brands(BrandName)
 VALUES
-	('Mercedes'),
+	('Tesla'),
 	('BMW'),
 	('Renault');
