@@ -18,9 +18,9 @@
 - [Files](#files)
 
 ## Installation
-- Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
- 1.Microsoft.EntityFrameworkCore (3.1.11)
- 2.Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
+Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
+> - Microsoft.EntityFrameworkCore (3.1.11)
+> - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
 
 ## Recent Changes
 - Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
