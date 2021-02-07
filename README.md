@@ -24,7 +24,7 @@
 - [Output](#output)
 - [Files](#files)
 
-## 🧱 Layers
+## Layers
 ### Entities Layer
 #### Concrete Classes
 1. [Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs)
@@ -64,13 +64,13 @@
 3. [IColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IColorDal.cs)
 4. [IEntityRepository.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IEntityRepository.cs)
 
-### Presentation Layer (Console)
+### Presentation Layer
 1. [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)
 
 ### SQL Query
 1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
 
-## 🗃 Tables in Database
+## Tables in Database
 #### Car
 Variable Name | Data Type
 ------------ | -------------
@@ -96,5 +96,5 @@ BrandName | string
 ## Output
 ![Console Output](https://user-images.githubusercontent.com/43720773/106929084-fca3aa00-6724-11eb-877c-8f66c0a7f6d9.jpg)
 
-## 📁 Files
+## Files
 ![Files](https://user-images.githubusercontent.com/43720773/106918756-8bf79000-671a-11eb-9b60-4e20d46ed1d8.jpg)
