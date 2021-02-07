@@ -14,6 +14,16 @@
 - EntityFramework dosyaları eklendi ✔
 - [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
 
+## Table of Contents
+- [Entities Layer](#entities-layer)
+- [Business Layer](#business-layer)
+- [DataAccess Layer](#dataaccess-layer)
+- [Presentation Layer](#presentation-layer)
+- [SQL Query](#sql-query)
+- [Tables in Database](#tables-in-database)
+- [Output](#output)
+- [Files](#files)
+
 ## 🧱 Layers
 ### Entities Layer
 #### Concrete Classes
@@ -54,13 +64,13 @@
 3. [IColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IColorDal.cs)
 4. [IEntityRepository.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IEntityRepository.cs)
 
-### UI Layer (Console)
+### Presentation Layer (Console)
 1. [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)
 
 ### SQL Query
 1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
 
-## 🗃 Tables
+## 🗃 Tables in Database
 #### Car
 Variable Name | Data Type
 ------------ | -------------
