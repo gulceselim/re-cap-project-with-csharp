@@ -10,16 +10,19 @@
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 ## Table of Contents
-- [Entities Layer](#entities-layer)
-- [Business Layer](#business-layer)
-- [DataAccess Layer](#dataaccess-layer)
-- [Presentation Layer](#presentation-layer)
+- [Recent Changes](#recent-changes)
+- [Layers](#layers)
 - [SQL Query](#sql-query)
 - [Tables in Database](#tables-in-database)
 - [Output](#output)
 - [Files](#files)
 
-## 🛠 Recent Changes
+## Installation
+- Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
+ 1.Microsoft.EntityFrameworkCore (3.1.11)
+ 2.Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
+
+## Recent Changes
 - Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
 - EntityFramework dosyaları eklendi ✔
 - [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
