@@ -24,6 +24,7 @@
 - [Tables in Database](#tables-in-database)
 - [Output](#output)
 - [Files](#files)
+- [License](#license)
 
 ## Installation
 Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
@@ -109,3 +110,6 @@ BrandName | string
 
 ## Files
 ![Files](https://user-images.githubusercontent.com/43720773/106918756-8bf79000-671a-11eb-9b60-4e20d46ed1d8.jpg)
+
+## License
+MIT © ,Selim Gulce
