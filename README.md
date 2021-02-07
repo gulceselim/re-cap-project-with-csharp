@@ -1,3 +1,4 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)
 <h1 align="center">ReCap Project : Araba Kiralama Sistemi</h1> 
 
 <p align="center">
