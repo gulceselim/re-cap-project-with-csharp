@@ -9,6 +9,13 @@
 - **Bir önceki projemde N-Katmanlı Mimari yapısını kullanmıştım ve [README.md](https://github.com/gulceselim/ReCapDemo/blob/master/README.md) dosyasında elimden geldiğince açıklamaya çalışmıştım isterseniz bakabilirsiniz.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
+
+## Recent Changes
+- Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
+- EntityFramework dosyaları eklendi ✔
+- [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
+
+
 ## Table of Contents
 - [Recent Changes](#recent-changes)
 - [Layers](#layers)
@@ -22,10 +29,10 @@ Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
 > - Microsoft.EntityFrameworkCore (3.1.11)
 > - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
 
-## Recent Changes
-- Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
-- EntityFramework dosyaları eklendi ✔
-- [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
+## Usage 
+Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
+
+![Image for Usage](https://user-images.githubusercontent.com/43720773/107143179-aa40d400-6944-11eb-9a45-e3f6dcdf6b80.jpg)
 
 ## Layers
 ### Entities Layer
