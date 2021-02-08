@@ -22,6 +22,8 @@
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
+- [Installation](#installation)
+- [Usage](#usage)
 - [Layers](#layers)
 - [SQL Query](#sql-query)
 - [Tables in Database](#tables-in-database)
