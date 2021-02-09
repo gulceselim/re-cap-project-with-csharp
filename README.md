@@ -89,7 +89,7 @@ Concrete | Abstract
  </table>
 
 
-### SQL Query
+## SQL Query
 1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
 
 ## Tables in Database
