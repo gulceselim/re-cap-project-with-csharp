@@ -13,12 +13,14 @@
 - **Bir önceki projemde N-Katmanlı Mimari yapısını kullanmıştım ve [README.md](https://github.com/gulceselim/ReCapDemo/blob/master/README.md) dosyasında elimden geldiğince açıklamaya çalışmıştım isterseniz bakabilirsiniz.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
+<br></br>
 
 ## Recent Changes
 - Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
 - EntityFramework dosyaları eklendi ✔
 - [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
 
+<br></br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -31,15 +33,21 @@
 - [Files](#files)
 - [License](#license)
 
+<br></br>
+
 ## Installation
 Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
 > - Microsoft.EntityFrameworkCore (3.1.11)
 > - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
 
+<br></br>
+
 ## Usage 
 Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
 
 ![Image for Usage](https://user-images.githubusercontent.com/43720773/107143179-aa40d400-6944-11eb-9a45-e3f6dcdf6b80.jpg)
+
+<br></br>
 
 ## Layers
 <table>
@@ -88,9 +96,12 @@ Concrete | Abstract
   </tr>
  </table>
 
+<br></br>
 
 ## SQL Query
 1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
+
+<br></br>
 
 ## Tables in Database
 <table>
@@ -131,12 +142,17 @@ BrandName | string
   </tr>
  </table>
 
+<br></br>
 
 ## Output
 ![Console Output](https://user-images.githubusercontent.com/43720773/106929084-fca3aa00-6724-11eb-877c-8f66c0a7f6d9.jpg)
 
+<br></br>
+
 ## Files
 ![Files](https://user-images.githubusercontent.com/43720773/106918756-8bf79000-671a-11eb-9b60-4e20d46ed1d8.jpg)
+
+<br></br>
 
 ## License
 [MIT](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt) © Selim Gulce
