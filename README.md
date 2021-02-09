@@ -88,7 +88,15 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
 
 ## Tables in Database
-#### Car
+<table>
+  <tr>
+    <td>Cars</td>
+     <td>Brands</td>
+     <td>Colors</td>
+  </tr>
+  <tr>
+    <td>
+
 Variable Name | Data Type
 ------------ | -------------
 CarId | int
@@ -97,18 +105,27 @@ ColorId | int
 ModelYear | string
 DailyPrice | decimal
 Description | string
+   
+   </td>
+    <td>
 
-#### Color
 Variable Name | Data Type
 ------------ | -------------
 ColorId | int
 ColorName | string
+   
+   </td>
+    <td>
 
-#### Brand
 Variable Name | Data Type
 ------------ | -------------
 BrandId | int
 BrandName | string
+   
+   </td>
+  </tr>
+ </table>
+
 
 ## Output
 ![Console Output](https://user-images.githubusercontent.com/43720773/106929084-fca3aa00-6724-11eb-877c-8f66c0a7f6d9.jpg)
