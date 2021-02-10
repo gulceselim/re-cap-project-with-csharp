@@ -50,7 +50,7 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 ## Layers
 <table>
   <tr>
-    <th>Entity Layer</th>
+    <th>Entities Layer</th>
      <th>Business Layer</th>
      <th>Data Access Layer</th>
   </tr>
