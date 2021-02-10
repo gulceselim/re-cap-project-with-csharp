@@ -15,10 +15,9 @@
 
 
 ## Recent Changes
-- Artık projemiz bir memory üzerinde değil, database üzerinde çalışıyor ✔
-- EntityFramework dosyaları eklendi ✔
-- [Brand](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/BrandManager.cs) ve [Car](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarManager.cs) modelleri için bazı kısıtlamalar yapıldı✔ (İlgili modelin üzerine tıklayarak ulaşabilirsiniz.)
-
+- Core katmanını dahil ederek buraya ekledeğimiz dosyalara, bu projedeki bütün katmanlar erişebilir. Aynı zamanda Core katmanındaki dosyaları başka projelerde de kullanabiliriz. 
+- Core katmanına yazmış olduğumuz [EfEntityRepositoryBase]() dosyamızı ekleyerek DRY(Don't repeat yourself) prensibine uymuş olduk.
+- Daha kullanışlı bir [arayüz](#output) tasarlandı.
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -33,10 +32,12 @@
 
 
 ## Installation
-Aşağıdaki paketler NuGet aracığıyla DataAccess katmanına eklenmelidir.
+Aşağıdaki paketler NuGet aracığıyla **DataAccess** katmanına eklenmelidir.
 > - Microsoft.EntityFrameworkCore (3.1.11)
 > - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
 
+Aşağıdaki paket NuGet aracığıyla **Core** katmanına eklenmelidir.
+> - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
 
 ## Usage 
 Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
@@ -47,17 +48,16 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 ## Layers
 <table>
   <tr>
-    <th>Entities Layer</th>
+    <th>Entity Layer</th>
      <th>Business Layer</th>
      <th>Data Access Layer</th>
-     <th>Presentation Layer</th>
   </tr>
   <tr>
     <td>
       
 Concrete | Abstract
 ------------ | -------------
-[Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) | [IEntity.cs](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Entities/Abstract)
+[Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) 
 [Brand.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Brand.cs)
 [Color.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Color.cs)
 
@@ -78,10 +78,27 @@ Concrete | Abstract
 [EfCarDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/EntityFramework/Repository/EfCarDal.cs) | [ICarDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/ICarDal.cs)
 [EfBrandDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/EntityFramework/Repository/EfBrandDal.cs) | [IBrandDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IBrandDal.cs)
 [EfColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/EntityFramework/Repository/EfColorDal.cs) | [IColorDal.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IColorDal.cs)
-[RentACarContext.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/EntityFramework/Context/RentACarContext.cs) | [IEntityRepository.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Abstract/IEntityRepository.cs)
+[RentACarContext.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/DataAccess/Concrete/EntityFramework/Context/RentACarContext.cs)
 
    </td>
-    <td>
+  </tr>
+ </table>
+
+<table>
+  <tr>
+    <th>Core Layer</th>
+     <th>Presentation Layer</th>
+  </tr>
+  <tr>
+  <td>
+  
+Entities | DataAccess
+------------ | -------------
+[IDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Entities/IDto.cs) | [IEntityRepository.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/DataAccess/IEntityRepository.cs)
+[IEntity.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Entities/IEntity.cs) | [EfEntityRepositoryBase.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/DataAccess/EntityFramework/EfEntityRepositoryBase.cs)
+ 
+   </td>
+   <td>
   
 Concrete | Abstract
 ------------ | -------------
@@ -137,11 +154,11 @@ BrandName | string
 
 
 ## Output
-![Console Output](https://user-images.githubusercontent.com/43720773/106929084-fca3aa00-6724-11eb-877c-8f66c0a7f6d9.jpg)
+![Console Output](https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg)
 
 
 ## Files
-![Files](https://user-images.githubusercontent.com/43720773/106918756-8bf79000-671a-11eb-9b60-4e20d46ed1d8.jpg)
+![Files](https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg)
 
 
 ## License
