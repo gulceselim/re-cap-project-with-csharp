@@ -16,7 +16,7 @@
 
 ## Recent Changes
 - Core katmanını dahil ederek buraya ekledeğimiz dosyalara, bu projedeki bütün katmanlar erişebilir. Aynı zamanda Core katmanındaki dosyaları başka projelerde de kullanabiliriz. 
-- Core katmanına yazmış olduğumuz [EfEntityRepositoryBase]() dosyamızı ekleyerek DRY(Don't repeat yourself) prensibine uymuş olduk.
+- Core katmanına yazmış olduğumuz [EfEntityRepositoryBase](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/DataAccess/EntityFramework/EfEntityRepositoryBase.cs) dosyamızı ekleyerek DRY(Don't repeat yourself) prensibine uymuş olduk.
 - Daha kullanışlı bir [arayüz](#output) tasarlandı.
 - DTOs klasörü eklendi. 
 - Car ile Color ve Brand modellerinin join işlemi yapıldı ve yeni bir model olan [CarDetailDto](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/CarDetailDto.cs) nesnesi oluşturuldu.
