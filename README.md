@@ -15,7 +15,7 @@
 
 
 ## Recent Changes
-- Core katmanını dahil ederek buraya ekledeğimiz dosyalara, bu projedeki bütün katmanlar erişebilir. Aynı zamanda Core katmanındaki dosyaları başka projelerde de kullanabiliriz. 
+- Core katmanını dahil ettik. Bu katmana ekledeğimiz dosyalara, bu projedeki bütün katmanlar erişebilir. 
 - Core katmanına yazmış olduğumuz [EfEntityRepositoryBase](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/DataAccess/EntityFramework/EfEntityRepositoryBase.cs) dosyamızı ekleyerek DRY(Don't repeat yourself) prensibine uymuş olduk.
 - Daha kullanışlı bir [arayüz](#output) tasarlandı.
 - DTOs klasörü eklendi. 
