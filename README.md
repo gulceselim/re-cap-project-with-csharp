@@ -18,6 +18,8 @@
 - Core katmanını dahil ederek buraya ekledeğimiz dosyalara, bu projedeki bütün katmanlar erişebilir. Aynı zamanda Core katmanındaki dosyaları başka projelerde de kullanabiliriz. 
 - Core katmanına yazmış olduğumuz [EfEntityRepositoryBase]() dosyamızı ekleyerek DRY(Don't repeat yourself) prensibine uymuş olduk.
 - Daha kullanışlı bir [arayüz](#output) tasarlandı.
+- DTOs klasörü eklendi. 
+- Car ile Color ve Brand modellerinin join işlemi yapıldı ve yeni bir model olan [CarDetailDto](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/CarDetailDto.cs) nesnesi oluşturuldu.
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -55,9 +57,9 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
   <tr>
     <td>
       
-Concrete | Abstract
+Concrete | DTOs
 ------------ | -------------
-[Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) 
+[Car.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Car.cs) | [CarDetailDto.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/DTOs/CarDetailDto.cs)
 [Brand.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Brand.cs)
 [Color.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Entities/Concrete/Color.cs)
 
@@ -100,8 +102,8 @@ Entities | DataAccess
    </td>
    <td>
   
-Concrete | Abstract
------------- | -------------
+Console 
+------------ 
 [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs) 
  
    </td>
