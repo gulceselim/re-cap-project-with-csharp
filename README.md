@@ -35,12 +35,12 @@
 
 
 ## Installation
-Aşağıdaki paketler NuGet aracığıyla **DataAccess** katmanına eklenmelidir.
-> - Microsoft.EntityFrameworkCore (3.1.11)
-> - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
+Aşağıdaki paketler NuGet aracığıyla **DataAccess** katmanına eklenmelidir. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; `Microsoft.EntityFrameworkCore (3.1.11)` <br>
+&nbsp;&nbsp;&nbsp;&nbsp; `Microsoft.EntityFrameworkCore.SqlServer (3.1.11)` <br>
 
-Aşağıdaki paket NuGet aracığıyla **Core** katmanına eklenmelidir.
-> - Microsoft.EntityFrameworkCore.SqlServer (3.1.11)
+Aşağıdaki paket NuGet aracığıyla **Core** katmanına eklenmelidir. <br>
+&nbsp;&nbsp;&nbsp;&nbsp; `Microsoft.EntityFrameworkCore.SqlServer (3.1.11)` <br>
 
 ## Usage 
 Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
