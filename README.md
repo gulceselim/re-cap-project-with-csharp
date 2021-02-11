@@ -141,14 +141,12 @@ BrandName | string
  </table>
 
 ## Output
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg" alt="Console Output"></img>
-</p>
+<img src="https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg" alt="Console Output"></img>
+
 
 ## Files
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg" alt="Files"></img>
-</p>
+<img src="https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg" alt="Files"></img>
+
 
 ## License
 [MIT](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt) © Selim Gulce
