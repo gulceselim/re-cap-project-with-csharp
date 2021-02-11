@@ -98,7 +98,7 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 &nbsp;&nbsp;&nbsp;&nbsp; 📃 [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)<br>
 
 ## SQL Query
-1. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
+&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
 
 
 ## Tables in Database
@@ -140,14 +140,15 @@ BrandName | string
   </tr>
  </table>
 
-
 ## Output
-![Console Output](https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg" alt="Console Output"></img>
+</p>
 
 ## Files
-![Files](https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg)
-
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg" alt="Files"></img>
+</p>
 
 ## License
 [MIT](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt) © Selim Gulce
