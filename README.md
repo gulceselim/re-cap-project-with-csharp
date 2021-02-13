@@ -15,10 +15,10 @@
 
 
 ## Recent Changes
-✔ [Results](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Core/Utilities/Results) klasörü core katmanında oluşturuldu ve bütün Business Sınıfları buna yapıya göre refactor edildi.
-✔ [Message.cs] static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı.
-✔ Customer, Rental, User tabloları eklendi. Bu modeller için CRUD operasyonları eklendi. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
-✔ Araba kiralarken, arabanın teslim edilmiş mi edilmemiş mi? Bunun [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/RentalManager.cs) yapıldı.
+✔ [Results](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Core/Utilities/Results) klasörü core katmanında oluşturuldu ve bütün Business Sınıfları buna yapıya göre refactor edildi. <br>
+✔ [Message.cs] static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı. <br>
+✔ Customer, Rental, User tabloları eklendi. Bu modeller için CRUD operasyonları eklendi. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) <br>
+✔ Araba kiralarken, arabanın teslim edilmiş mi edilmemiş mi? Bunun [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/RentalManager.cs) yapıldı. <br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
