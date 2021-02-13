@@ -1,9 +1,12 @@
 ﻿using Business.Abstract;
+using Business.Constants;
+using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
 using System;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Business.Concrete
@@ -17,80 +20,52 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        public void Add(Car car)
+        public IResult Add(Car car)
         {
             if (car.DailyPrice > 0)
             {
                 _carDal.Add(car);
-                Console.WriteLine("Araba başarıyla eklendi.");
+                return new SuccessResult(Messages.AddedCar);
             }
             else
             {
-                Console.WriteLine($"Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer : {car.DailyPrice}");  
+                return new ErrorResult(Messages.FailedCarAddOrUpdate);
             }
         }
 
-        public void Delete(Car car)
+        public IResult Delete(Car car)
         {
-            try
-            {
-                _carDal.Delete(car);
-                Console.WriteLine("Araba başarıyla silindi.");
-            }
-            catch (ArgumentNullException)
-            {
-                Console.WriteLine("Girdiğiniz Id değerine sahip araba yok!");
-            }
+           
+            _carDal.Delete(car);
+            return new SuccessResult(Messages.DeletedCar);
+            
+        }
+
+        public IDataResult<List<Car>> GetAll()
+        {
+            return new SuccessDataResult<List<Car>>(_carDal.GetAll());
+        }
+
+        public IDataResult<Car> GetById(int id)
+        {
+            return new SuccessDataResult<Car>(_carDal.Get(c => c.CarId == id));
+        }
+        public IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car,bool>> filter = null)
+        {
+            return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(filter));
 
         }
 
-        public List<Car> GetAll()
-        {
-            return _carDal.GetAll();
-        }
-
-        public List<Car> GetAllByBrandId(int id)
-        {
-            return _carDal.GetAll(c => c.BrandId == id); 
-        }
-
-        public List<Car> GetAllByColorId(int id)
-        {
-            return _carDal.GetAll(c => c.ColorId == id);
-
-        }
-
-        public List<Car> GetByDailyPrice(decimal min, decimal max)
-        {
-            return _carDal.GetAll(c => c.DailyPrice >= min && c.DailyPrice <= max);
-
-        }
-
-        public Car GetById(int id)
-        {
-            return _carDal.Get(c => c.CarId == id);
-        }
-
-        public List<Car> GetByModelYear(string year)
-        {
-            return _carDal.GetAll(c => c.ModelYear.Contains(year) == true);
-        }
-
-        public List<CarDetailDto> GetCarDetails()
-        {
-            return _carDal.GetCarDetails();
-        }
-
-        public void Update(Car car)
+        public IResult Update(Car car)
         {
             if (car.DailyPrice > 0)
             {
                 _carDal.Update(car);
-                Console.WriteLine("Araba başarıyla güncellendi.");
+                return new SuccessResult(Messages.UpdatedCar);
             }
             else
             {
-                Console.WriteLine($"Lütfen günlük fiyat kısmını 0'dan büyük giriniz. Girdiğiniz değer : {car.DailyPrice}");
+                return new ErrorResult(Messages.FailedCarAddOrUpdate);
             }
         }
     }
