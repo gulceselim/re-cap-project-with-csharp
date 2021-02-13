@@ -16,7 +16,7 @@
 
 ## Recent Changes
 ✔ [Results](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Core/Utilities/Results) klasörü core katmanında oluşturuldu ve bütün Business Sınıfları buna yapıya göre refactor edildi. <br>
-✔ [Message.cs] static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı. <br>
+✔ [Message.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Constants/Messages.cs) static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı. <br>
 ✔ Customer, Rental, User tabloları eklendi. Bu modeller için CRUD operasyonları eklendi. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) <br>
 ✔ Araba kiralarken, arabanın teslim edilmiş mi edilmemiş mi? Bunun [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/RentalManager.cs) yapıldı. <br>
 
