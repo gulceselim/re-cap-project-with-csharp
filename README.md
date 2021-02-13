@@ -16,8 +16,9 @@
 
 ## Recent Changes
 ✔ [Results](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Core/Utilities/Results) klasörü core katmanında oluşturuldu ve bütün Business Sınıfları buna yapıya göre refactor edildi.
-✔ 
-
+✔ [Message.cs] static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı.
+✔ Customer, Rental, User tabloları eklendi. Bu modeller için CRUD operasyonları eklendi. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
+✔ Araba kiralarken, arabanın teslim edilmiş mi edilmemiş mi? Bunun [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/RentalManager.cs) yapıldı.
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -170,11 +171,14 @@ BrandName | string
  </table>
 
 ## Output
-<img src="https://user-images.githubusercontent.com/43720773/107492977-1c602580-6b9e-11eb-97f4-5081455063d0.jpg" alt="Console Output"></img>
+<img src="https://user-images.githubusercontent.com/43720773/107849881-381e3280-6e0f-11eb-848d-14c5fc54a4e9.jpg" alt="Console Output"></img>
 
 
 ## Files
-<img src="https://user-images.githubusercontent.com/43720773/107492995-241fca00-6b9e-11eb-8449-4280c692fe0f.jpg" alt="Files"></img>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/43720773/107849882-38b6c900-6e0f-11eb-99dd-63cfd1c04e9f.jpg"></img>
+  <img src="https://user-images.githubusercontent.com/43720773/107849884-39e7f600-6e0f-11eb-826a-ddb89f129cc1.jpg"></img>
+</p>
 
 
 ## License
