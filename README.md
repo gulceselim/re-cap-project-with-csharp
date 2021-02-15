@@ -14,10 +14,9 @@
 
 
 ## Recent Changes
-✔ [WebAPI Katmanı]() oluşturuldu. <br>
+✔ [WebAPI Katmanı](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/WebAPI) oluşturuldu. <br>
 ✔ Business katmanındaki tüm servislerin API controller'ları yazıldı. <br>
-✔ [IoC Container]() prensibi uygulandı böylece bağımlılığı az (Loose Coupling) olan nesneler oluşturduk.<br>
-
+✔ [IoC Container](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Startup.cs) prensibi uygulandı böylece bağımlılığı az (Loose Coupling) olan nesneler oluşturduk. AddSingleton metodu kullanıldı fakat ilerleyen zamanlarda AOP dahil olacağı için **AutoFac** IoC'i kullanacağız. <br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -127,14 +126,14 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 &nbsp;&nbsp;&nbsp;&nbsp; 📃 [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)<br><br>
 
 🗃 **``WebAPI Layer``** <br>
-&nbsp;&nbsp;&nbsp;&nbsp;📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;📃 [Startup.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Startup.cs) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;📂 ``Controllers`` <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [BrandsController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/BrandsController.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CarsController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/CarsController.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [ColorsController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/ColorsController.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [CustomersController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/CustomersController.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentalsController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/RentalsController.cs) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [UsersController.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/UsersController.cs) <br><br>
 
 ## SQL Query
 &nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
@@ -155,9 +154,9 @@ Variable Name | Data Type
 CarId | int
 BrandId | int
 ColorId | int
-ModelYear | string
+ModelYear | nvarchar(25)
 DailyPrice | decimal
-Description | string
+Description | nvarchar(25)
    
    </td>
     <td>
@@ -165,7 +164,7 @@ Description | string
 Variable Name | Data Type
 ------------ | -------------
 ColorId | int
-ColorName | string
+ColorName | nvarchar(25)
    
    </td>
     <td>
@@ -173,8 +172,49 @@ ColorName | string
 Variable Name | Data Type
 ------------ | -------------
 BrandId | int
-BrandName | string
+BrandName | nvarchar(25)
    
+   </td>
+  </tr>
+ </table>
+ 
+ <table>
+  <tr>
+    <td>Customers</td>
+     <td>Rentals</td>
+     <td>Users</td>
+  </tr>
+  <tr>
+    <td>
+
+Variable Name | Data Type
+------------ | -------------
+CustomerId | int
+UserId | int
+CustomerName | nvarchar(25)
+   
+   </td>
+    <td>
+
+Variable Name | Data Type
+------------ | -------------
+RentalId | int
+CarId | int
+CustomerId | int
+RentDate | datetime
+ReturnDate | datetime
+
+   </td>
+    <td>
+
+Variable Name | Data Type
+------------ | -------------
+UserId | int
+FirstName | nvarchar(25)
+LastName | nvarchar(25)
+Email | nvarchar(55)
+Password | nvarchar(35)
+
    </td>
   </tr>
  </table>
