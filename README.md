@@ -16,7 +16,7 @@
 ## Recent Changes
 ✔ [WebAPI Katmanı]() oluşturuldu. <br>
 ✔ Business katmanındaki tüm servislerin API controller'ları yazıldı. <br>
-✔ [IoC Container]() prensibi uygulandı böylece bağımlılı az (Loose Couplin) olan nesneler oluşturduk.<br>
+✔ [IoC Container]() prensibi uygulandı böylece bağımlılığı az (Loose Coupling) olan nesneler oluşturduk.<br>
 
 
 ## Table of Contents
