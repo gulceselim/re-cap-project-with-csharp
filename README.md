@@ -9,16 +9,15 @@
 </p>
 
 ## ⭐ Introduction 
-- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Şimdilik Car, Brand ve Color nesnelerinden ve onun operasyonlarından oluşan bu küçük proje zamanla geliştirilecektir.**
-- **Bir önceki projemde N-Katmanlı Mimari yapısını kullanmıştım ve [README.md](https://github.com/gulceselim/ReCapDemo/blob/master/README.md) dosyasında elimden geldiğince açıklamaya çalışmıştım isterseniz bakabilirsiniz.**
+- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
 ## Recent Changes
-✔ [Results](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Core/Utilities/Results) klasörü core katmanında oluşturuldu ve bütün Business Sınıfları buna yapıya göre refactor edildi. <br>
-✔ [Message.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Constants/Messages.cs) static class'ı oluşturuldu ve yapılan işlemlerde dönücek mesajlar bu class'a yazıldı. <br>
-✔ Customer, Rental, User tabloları eklendi. Bu modeller için CRUD operasyonları eklendi. [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) <br>
-✔ Araba kiralarken, arabanın teslim edilmiş mi edilmemiş mi? Bunun [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/RentalManager.cs) yapıldı. <br>
+✔ [WebAPI Katmanı]() oluşturuldu. <br>
+✔ Business katmanındaki tüm servislerin API controller'ları yazıldı. <br>
+✔ [IoC Container]() prensibi uygulandı böylece bağımlılı az (Loose Couplin) olan nesneler oluşturduk.<br>
+
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -125,7 +124,17 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 [ErrorResult.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Utilities/Results/ErrorResult.cs) <br><br>
 
 🗃 **``Presentation Layer``** <br>
-&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)<br>
+&nbsp;&nbsp;&nbsp;&nbsp; 📃 [Program.cs](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/ConsoleUI/Program.cs)<br><br>
+
+🗃 **``WebAPI Layer``** <br>
+&nbsp;&nbsp;&nbsp;&nbsp;📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;📂 ``Controllers`` <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📃 []() <br><br>
 
 ## SQL Query
 &nbsp;&nbsp;&nbsp;&nbsp; 📃 [RentACarSQLQuery.sql](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql)
@@ -175,9 +184,10 @@ BrandName | string
 
 
 ## Files
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/43720773/107849882-38b6c900-6e0f-11eb-99dd-63cfd1c04e9f.jpg"></img>
-  <img src="https://user-images.githubusercontent.com/43720773/107849884-39e7f600-6e0f-11eb-826a-ddb89f129cc1.jpg"></img>
+<p align="left">
+  <img src="https://user-images.githubusercontent.com/43720773/107958440-0e057580-6fb3-11eb-9f44-6c06089b7f80.jpg"></img>
+  <img src="https://user-images.githubusercontent.com/43720773/107958447-0fcf3900-6fb3-11eb-9268-10aa3e2ad79e.jpg"></img>
+  <img src="https://user-images.githubusercontent.com/43720773/107958451-11006600-6fb3-11eb-8ae8-43a41ad55628.jpg"></img>
 </p>
 
 
