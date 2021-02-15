@@ -15,7 +15,7 @@
 
 ## Recent Changes
 ✔ [WebAPI Katmanı](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/WebAPI) oluşturuldu. <br>
-✔ Business katmanındaki tüm servislerin API controller'ları yazıldı. <br>
+✔ Business katmanındaki tüm servislerin [API controller](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/WebAPI)'ları yazıldı. <br>
 ✔ [IoC Container](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Startup.cs) prensibi uygulandı böylece bağımlılığı az (Loose Coupling) olan nesneler oluşturduk. AddSingleton metodu kullanıldı fakat ilerleyen zamanlarda AOP dahil olacağı için **AutoFac** IoC'i kullanacağız. <br>
 
 ## Table of Contents
