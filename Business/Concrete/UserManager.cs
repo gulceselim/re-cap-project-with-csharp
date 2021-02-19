@@ -21,13 +21,13 @@ namespace Business.Concrete
         public IResult Add(User user)
         {
             _userDal.Add(user);
-            return new SuccessResult(Messages.AddedRental);
+            return new SuccessResult(Messages.AddedColor);
         }
 
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
-            return new SuccessResult(Messages.DeletedRental);
+            return new SuccessResult(Messages.DeletedColor);
         }
 
         public IDataResult<List<User>> GetAll()
@@ -43,7 +43,7 @@ namespace Business.Concrete
         public IResult Update(User user)
         {
             _userDal.Update(user);
-            return new SuccessResult(Messages.UpdatedRental);
+            return new SuccessResult(Messages.UpdatedColor);
         }
     }
 }
