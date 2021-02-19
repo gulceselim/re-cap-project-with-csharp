@@ -14,9 +14,9 @@
 
 
 ## Recent Changes
-✔ [WebAPI Katmanı](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/WebAPI) oluşturuldu. <br>
-✔ Business katmanındaki tüm servislerin [API controller](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/WebAPI)'ları yazıldı. <br>
-✔ [IoC Container](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Startup.cs) prensibi uygulandı böylece bağımlılığı az (Loose Coupling) olan nesneler oluşturduk. AddSingleton metodu kullanıldı fakat ilerleyen zamanlarda AOP dahil olacağı için **AutoFac** IoC'i kullanacağız. <br>
+✔ [Validation](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Business/ValidationRules/FluentValidation) kuralları yazıldı. FluentValidation paketi kullanıldı. <br>
+✔ AOP'yi dahil ettik ve bir önceki versionda Microsoft'un IoC yapısını kullanıyorduk fakat refactor gerçekleştirdik ve [Autofac IOC container](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs)'ını kullanıyoruz. <br>
+✔ Business katmanında tüm manager dosyalarındaki add ve update metotlarına [AOP yapısı](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Business/Concrete) uygulandı. <br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
