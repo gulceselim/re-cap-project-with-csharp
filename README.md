@@ -273,4 +273,4 @@ Password | nvarchar(35)
 
 
 ## License
-[MIT © Selim Gülce](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt) © Selim Gülce 
+[MIT © Selim Gülce](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/LICENSE.txt)  
