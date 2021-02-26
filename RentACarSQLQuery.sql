@@ -46,7 +46,13 @@ CREATE TABLE Rentals(
 
 )
 
-
+Create Table CarImages(
+	CarImagesId int PRIMARY KEY IDENTITY(1,1),
+	CarId int,
+	ImagePath nvarchar(MAX),
+	CarImagesDate datetime,
+	FOREIGN KEY (CarId) REFERENCES Cars(CarId)
+)
 
 
 INSERT INTO Cars(BrandId,ColorId,ModelYear,DailyPrice,Descriptions)
