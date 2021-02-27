@@ -224,6 +224,7 @@ BrandName | nvarchar(25)
     <td>Customers</td>
      <td>Rentals</td>
      <td>Users</td>
+     <td>CarImages</td>
   </tr>
   <tr>
     <td>
@@ -255,6 +256,16 @@ FirstName | nvarchar(25)
 LastName | nvarchar(25)
 Email | nvarchar(55)
 Password | nvarchar(35)
+
+   </td>
+   <td>
+
+Variable Name | Data Type
+------------ | -------------
+CarImagesId | int
+CarId | int
+CarImagesDate | datetime
+ImagePath | nvarchar(MAX)
 
    </td>
   </tr>
