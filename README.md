@@ -38,7 +38,7 @@
 $ git clone https://github.com/gulceselim/re-cap-project-with-csharp.git
 
 # Go to the folder you cloned
-$ cd re-cap-project-with-csharp.git
+$ cd re-cap-project-with-csharp
 
 # Install dependencies
 $ dotnet restore
