@@ -34,13 +34,13 @@
 
 ## Installation
 ```bash
-# Repository klonlayın
+# Clone to repository
 $ git clone https://github.com/gulceselim/re-cap-project-with-csharp.git
 
-# Klonladığınız klasöre gidin
+# Go to the folder you cloned
 $ cd re-cap-project-with-csharp.git
 
-# Bağımlılıkları yükleyin
+# Install dependencies
 $ dotnet restore
 ```
 
