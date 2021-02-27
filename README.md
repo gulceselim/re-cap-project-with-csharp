@@ -9,14 +9,16 @@
 </p>
 
 ## ⭐ Introduction 
-- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
+- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
 ## Recent Changes
-✔ [Validation](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Business/ValidationRules/FluentValidation) kuralları yazıldı. FluentValidation paketi kullanıldı. <br>
-✔ AOP'yi dahil ettik ve bir önceki versionda Microsoft'un IoC yapısını kullanıyorduk fakat refactor gerçekleştirdik ve [Autofac IOC container](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/DependencyResolvers/Autofac/AutofacBusinessModule.cs)'ını kullanıyoruz. <br>
-✔ Business katmanında tüm manager dosyalarındaki add ve update metotlarına [AOP yapısı](https://github.com/gulceselim/re-cap-project-with-csharp/tree/main/Business/Concrete) uygulandı. <br>
+✔ [CarImages](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) tablosu oluşturuldu. <br>
+✔ Resim dosyalarının ekleme, silme ve güncelleme işlemleri için [FileHelper](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Utilities/FileHelper/FileHelper.cs) dosyası oluşturuldu. <br>
+✔ Resim dosyalarının isimleri GUID ile oluşturuldu. <br>
+✔ Bir arabanın en fazla 5 resmi olabilir [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarImageManager.cs) yapıldı. <br>
+✔ Bir arabaya ait olan resimler listelendi. <br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
