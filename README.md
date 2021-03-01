@@ -18,7 +18,7 @@
 ✔ Resim dosyalarının ekleme, silme ve güncelleme işlemleri için [FileHelper](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Utilities/FileHelper/FileHelper.cs) dosyası oluşturuldu. <br>
 ✔ Resim dosyalarının isimleri GUID ile oluşturuldu. <br>
 ✔ Bir arabanın en fazla 5 resmi olabilir [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarImageManager.cs) yapıldı. <br>
-✔ Bir arabaya ait olan resimler listelendi. <br>
+✔ Bir arabaya ait olan resimler [listelendi](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/CarImagesController.cs). <br>
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
@@ -34,13 +34,13 @@
 
 ## Installation
 ```bash
-# Repository klonlayın
+# Clone to repository
 $ git clone https://github.com/gulceselim/re-cap-project-with-csharp.git
 
-# Klonladığınız klasöre gidin
-$ cd re-cap-project-with-csharp.git
+# Go to the folder you cloned
+$ cd re-cap-project-with-csharp
 
-# Bağımlılıkları yükleyin
+# Install dependencies
 $ dotnet restore
 ```
 
