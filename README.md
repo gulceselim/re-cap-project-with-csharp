@@ -14,11 +14,7 @@
 
 
 ## Recent Changes
-✔ [CarImages](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) tablosu oluşturuldu. <br>
-✔ Resim dosyalarının ekleme, silme ve güncelleme işlemleri için [FileHelper](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Core/Utilities/FileHelper/FileHelper.cs) dosyası oluşturuldu. <br>
-✔ Resim dosyalarının isimleri GUID ile oluşturuldu. <br>
-✔ Bir arabanın en fazla 5 resmi olabilir [kontrolü](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/Business/Concrete/CarImageManager.cs) yapıldı. <br>
-✔ Bir arabaya ait olan resimler [listelendi](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/WebAPI/Controllers/CarImagesController.cs). <br>
+✔ JWT Entegrasyonu yapıldı.
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
