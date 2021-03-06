@@ -11,10 +11,11 @@ using Business.Constants;
 
 namespace Business.BusinessAspect.Autofac
 {
+    //JWT için
     public class SecuredOperation : MethodInterception
     {
         private string[] _roles;
-        private IHttpContextAccessor _httpContextAccessor;
+        private IHttpContextAccessor _httpContextAccessor; // Her istek yapan kullanıcı için HttpContext ekler.
 
         public SecuredOperation(string roles)
         {

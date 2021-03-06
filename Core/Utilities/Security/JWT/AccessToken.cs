@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Core.Utilities.Security.JWT
 {
+    //Kullanıcı giriş yaptıktan sonra token veriyoruz.
     public class AccessToken
     {
         public string Token { get; set; }
