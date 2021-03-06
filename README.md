@@ -14,10 +14,10 @@
 
 
 ## Recent Changes
-✔ Caching, Transaction ve Performance aspectleri eklendi.
-✔ CarManager class'ına ait olan GetAll metoduna Logging aspect'i eklendi.
-✔ Car nesnesinin GetAll metodu performance ile test edildi. 
-✔ Çalıştırılan metodlar log4net.config ile log.json dosyasına yazıldı. 
+✔ Caching, Transaction ve Performance aspectleri eklendi. <br>
+✔ CarManager class'ına ait olan GetAll metoduna Logging aspect'i eklendi. <br>
+✔ Car nesnesinin GetAll metodu performance ile test edildi. <br>
+✔ Çalıştırılan metodlar log4net.config ile log.json dosyasına yazıldı. <br> 
 
 ## Table of Contents
 - [Recent Changes](#recent-changes)
