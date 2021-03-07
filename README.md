@@ -199,8 +199,8 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
       
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-BrandName | nvarchar(25)
+Id | INT
+BrandName | NVARCHAR(25)
 
    
    </td>
@@ -208,22 +208,22 @@ BrandName | nvarchar(25)
   
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-CarId | int
-CarImagesDate | datetime
-ImagePath | nvarchar(MAX)
+Id | INT
+CarId | INT
+CarImagesDate | DATETIME
+ImagePath | NVARCHAR(MAX)
    
    </td>
     <td>
   
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-BrandId | int
-ColorId | int
-ModelYear | nvarchar(25)
-DailyPrice | decimal
-Description | nvarchar(25)
+Id | INT
+BrandId | INT
+ColorId | INT
+ModelYear | NVARCHAR(25)
+DailyPrice | DECIMAL
+Description | NVARCHAR(25)
 
    
    </td>
@@ -231,8 +231,8 @@ Description | nvarchar(25)
 
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-ColorName | nvarchar(25)
+Id | INT
+ColorName | NVARCHAR(25)
 
    </td>
     <td>
@@ -240,9 +240,9 @@ ColorName | nvarchar(25)
 
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-UserId | int
-CustomerName | nvarchar(25)
+Id | INT
+UserId | INT
+CustomerName | NVARCHAR(25)
 
    </td>
     <td>
@@ -250,41 +250,41 @@ CustomerName | nvarchar(25)
 
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-Name  | varchar(250)
+Id | INT
+Name  | VARCHAR(250)
 
    </td>
    <td>
   
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-CarId | int
-CustomerId | int
-RentDate | datetime
-ReturnDate | datetime
+Id | INT
+CarId | INT
+CustomerId | INT
+RentDate | DATETIME
+ReturnDate | DATETIME
 
    </td>
     <td>
   
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-UserId | int
-OperationId | int
+Id | INT
+UserId | INT
+OperationId | INT
 
    </td>
     <td>
   
 Variable Name | Data Type
 ------------ | -------------
-Id | int
-FirstName | varchar(50)
-LastName | varchar(50)
-Email | varchar(50)
-PasswordHash | varchar(500)
-PasswordSalt | varchar(500)
-Status | bit
+Id | INT
+FirstName | VARCHAR(50)
+LastName | VARCHAR(50)
+Email | VARCHAR(50)
+PasswordHash | VARBINARY (500)
+PasswordSalt | VARBINARY (500)
+Status | BIT
 
    </td>
   </tr>
