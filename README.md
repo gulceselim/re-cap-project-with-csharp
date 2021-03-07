@@ -184,64 +184,81 @@ Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctr
 ## Tables in Database
 <table>
   <tr>
-    <td>Cars</td>
      <td>Brands</td>
+     <td>CarImages</td>
+     <td>Cars</td>
      <td>Colors</td>
+     <td>Customers</td>
+     <td>OperationClaims</td>
+     <td>Rentals</td>
+     <td>UserOperationClaims</td>
+     <td>Users</td>
   </tr>
   <tr>
     <td>
-
+      
 Variable Name | Data Type
 ------------ | -------------
+Id | int
+BrandName | nvarchar(25)
+
+   
+   </td>
+    <td>
+  
+Variable Name | Data Type
+------------ | -------------
+Id | int
 CarId | int
+CarImagesDate | datetime
+ImagePath | nvarchar(MAX)
+   
+   </td>
+    <td>
+  
+Variable Name | Data Type
+------------ | -------------
+Id | int
 BrandId | int
 ColorId | int
 ModelYear | nvarchar(25)
 DailyPrice | decimal
 Description | nvarchar(25)
+
    
    </td>
     <td>
 
 Variable Name | Data Type
 ------------ | -------------
-ColorId | int
+Id | int
 ColorName | nvarchar(25)
-   
+
    </td>
     <td>
 
-Variable Name | Data Type
------------- | -------------
-BrandId | int
-BrandName | nvarchar(25)
-   
-   </td>
-  </tr>
- </table>
- 
- <table>
-  <tr>
-    <td>Customers</td>
-     <td>Rentals</td>
-     <td>Users</td>
-     <td>CarImages</td>
-  </tr>
-  <tr>
-    <td>
 
 Variable Name | Data Type
 ------------ | -------------
-CustomerId | int
+Id | int
 UserId | int
 CustomerName | nvarchar(25)
-   
+
    </td>
     <td>
 
+
 Variable Name | Data Type
 ------------ | -------------
-RentalId | int
+Id | int
+Name  | varchar(250)
+
+   </td>
+   <td>
+  
+Variable Name | Data Type
+------------ | -------------
+Id | int
 CarId | int
 CustomerId | int
 RentDate | datetime
@@ -249,24 +266,25 @@ ReturnDate | datetime
 
    </td>
     <td>
-
+  
 Variable Name | Data Type
 ------------ | -------------
+Id | int
 UserId | int
-FirstName | nvarchar(25)
-LastName | nvarchar(25)
-Email | nvarchar(55)
-Password | nvarchar(35)
+OperationId | int
 
    </td>
-   <td>
-
+    <td>
+  
 Variable Name | Data Type
 ------------ | -------------
-CarImagesId | int
-CarId | int
-CarImagesDate | datetime
-ImagePath | nvarchar(MAX)
+Id | int
+FirstName | varchar(50)
+LastName | varchar(50)
+Email | varchar(50)
+PasswordHash | varchar(500)
+PasswordSalt | varchar(500)
+Status | bit
 
    </td>
   </tr>
