@@ -9,7 +9,7 @@
 </p>
 
 ## ⭐ Introduction 
-- **Entities, DataAccess, Business, Core ve WebAPI katmanlarından oluşan araba kiralama projesidir. Bu projede Katmanlı mimari yapısı ve SOLID prensiplerine dikkate alınarak yazılmıştır. JWT entegrasyonu; Transaction, Cache, Validation ve Performance aspectleri implementasyonu gerçekleştirilmiştir.** 
+- **Entities, DataAccess, Business, Core ve WebAPI katmanlarından oluşan araba kiralama projesidir. Bu projede Katmanlı mimari yapısı ve SOLID prensiplerine dikkate alınarak yazılmıştır. JWT entegrasyonu; Transaction, Cache, Validation ve Performance aspect'lerinin implementasyonu gerçekleştirilmiştir.** 
 - **Validation için FluentValidation desteği, IoC için ise Autofac desteği eklenmiştir.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
@@ -45,9 +45,9 @@ $ dotnet restore
 ```
 
 ## Usage 
-Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz.
+Aşağıda görmüş olduğunuz resimdeki işlemi gerçekleştirdikten sonra Ctrl+F5 ile uygulamayı çalıştırabilirsiniz. Daha sonrasında Postman uygulaması aracılığıyla projeye isteklerde bulunabilirsiniz. 
 
-![Image for Usage](https://user-images.githubusercontent.com/43720773/107143179-aa40d400-6944-11eb-9a45-e3f6dcdf6b80.jpg)
+![Image for Usage](https://user-images.githubusercontent.com/43720773/110237438-28e15f00-7f4d-11eb-9305-4c9257a06e72.jpg)
 
 
 ## Layers
@@ -358,12 +358,13 @@ Status | BIT
 
 ## Files
 
-<img src="https://user-images.githubusercontent.com/43720773/108479671-0e4d8b80-72a7-11eb-907f-0dfcc2a1eac7.jpg"></img><br>
-<img src="https://user-images.githubusercontent.com/43720773/108479673-0ee62200-72a7-11eb-9685-e044171df607.jpg"></img><br>
-<img src="https://user-images.githubusercontent.com/43720773/108479675-0f7eb880-72a7-11eb-86a6-3f48c0429e9f.jpg"></img><br>
-<img src="https://user-images.githubusercontent.com/43720773/108479677-0f7eb880-72a7-11eb-9ac8-7c9edd91f1e1.jpg"></img><br>
-<img src="https://user-images.githubusercontent.com/43720773/108479679-10174f00-72a7-11eb-9bc3-0590da8dfc2c.jpg"></img><br>
-<img src="https://user-images.githubusercontent.com/43720773/108479681-10174f00-72a7-11eb-8140-8b98e38dc077.jpg"></img>
+![Screenshot_2](https://user-images.githubusercontent.com/43720773/110237584-dce2ea00-7f4d-11eb-9059-306e377d9426.jpg)<br>
+![Screenshot_4](https://user-images.githubusercontent.com/43720773/110237586-deacad80-7f4d-11eb-8132-1461695c392a.jpg)<br>
+![Screenshot_5](https://user-images.githubusercontent.com/43720773/110237604-ef5d2380-7f4d-11eb-803c-579806c72530.jpg)<br>
+![Screenshot_6](https://user-images.githubusercontent.com/43720773/110237605-f08e5080-7f4d-11eb-821a-27dede64b071.jpg)<br>
+![Screenshot_7](https://user-images.githubusercontent.com/43720773/110237608-f2f0aa80-7f4d-11eb-954c-375e26394841.jpg)<br>
+![Screenshot_8](https://user-images.githubusercontent.com/43720773/110237609-f3894100-7f4d-11eb-9795-1fbe776f2acf.jpg)<br>
+![Screenshot_9](https://user-images.githubusercontent.com/43720773/110237610-f4ba6e00-7f4d-11eb-9ffe-2ab5bda1f860.jpg)
 
 
 
