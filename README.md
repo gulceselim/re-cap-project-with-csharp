@@ -9,7 +9,8 @@
 </p>
 
 ## ⭐ Introduction 
-- **Entities, DataAccess, Business ve Console katmanlarından oluşan araba kiralama console projesidir. Car, Brand, Color, Customer, User, CarImages ve Rental nesnelerinden ve onun operasyonlarından oluşan bu proje zamanla geliştirilecektir.**
+- **Entities, DataAccess, Business, Core ve WebAPI katmanlarından oluşan araba kiralama projesidir. Bu projede Katmanlı mimari yapısı ve SOLID prensiplerine dikkate alınarak yazılmıştır. JWT entegrasyonu; Transaction, Cache, Validation ve Performance aspectleri implementasyonu gerçekleştirilmiştir.** 
+- **Validation için FluentValidation desteği, IoC için ise Autofac desteği eklenmiştir.**
 - **[Sql query](https://github.com/gulceselim/re-cap-project-with-csharp/blob/main/RentACarSQLQuery.sql) dosyamı da ekledim isteyen varsa faydalanabilir.**
 
 
