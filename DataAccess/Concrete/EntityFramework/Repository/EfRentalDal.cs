@@ -30,10 +30,11 @@ namespace DataAccess.Concrete.EntityFramework.Repository
                              {
                                  RentalId = r.Id,
                                  CarName = b.BrandName,
-                                 CustomerName = cu.CustomerName,
+                                 CustomerName = u.FirstName + " " + u.LastName,
                                  UserName = u.FirstName + " " + u.LastName,
                                  RentDate = r.RentDate,
-                                 ReturnDate = r.ReturnDate
+                                 ReturnDate = r.ReturnDate,
+                                 TotalPrice = Convert.ToDecimal(r.ReturnDate.Value.Day - r.RentDate.Day) * c.DailyPrice
                              };
                 return result.ToList();
             }
