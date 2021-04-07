@@ -27,7 +27,7 @@ namespace Core.Utilities.Helpers
                 return exception.Message;
             }
 
-            return result.Path2;
+            return result.Path2.Replace("\\", "/");
         }
 
         public static string UpdateAsync(string sourcePath, IFormFile file)
@@ -53,7 +53,7 @@ namespace Core.Utilities.Helpers
                 return excepiton.Message;
             }
 
-            return result.Path2;
+            return result.Path2.Replace("\\","/");
         }
 
         public static IResult DeleteAsync(string path)

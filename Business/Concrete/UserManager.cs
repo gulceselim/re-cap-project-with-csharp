@@ -21,13 +21,13 @@ namespace Business.Concrete
         public IResult Add(User user)
         {
             _userDal.Add(user);
-            return new SuccessResult(Messages.AddedColor);
+            return new SuccessResult(Messages.AddedUser);
         }
 
         public IResult Delete(User user)
         {
             _userDal.Delete(user);
-            return new SuccessResult(Messages.DeletedColor);
+            return new SuccessResult(Messages.DeletedUser);
         }
 
         public IDataResult<List<User>> GetAll()
@@ -40,9 +40,9 @@ namespace Business.Concrete
             return new SuccessDataResult<User>(_userDal.Get(I => I.Id == id));
         }
 
-        public User GetByMail(string email)
+        public IDataResult<User> GetByMail(string email)
         {
-            return _userDal.Get(u => u.Email == email);
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Email == email));
         }
 
         public List<OperationClaim> GetClaims(User user)
@@ -53,7 +53,7 @@ namespace Business.Concrete
         public IResult Update(User user)
         {
             _userDal.Update(user);
-            return new SuccessResult(Messages.UpdatedColor);
+            return new SuccessResult(Messages.UpdatedUser);
         }
 
     }

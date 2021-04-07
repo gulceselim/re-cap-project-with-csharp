@@ -29,7 +29,7 @@ namespace Business.Concrete
             _carDal = carDal;
         }
 
-        //[SecuredOperation("car.add,admin")]
+        [SecuredOperation("car.add")]
         [ValidationAspect(typeof(CarValidator))]
         [CacheRemoveAspect("ICarService.Get")]
         public IResult Add(Car car)
@@ -48,21 +48,17 @@ namespace Business.Concrete
         }
 
         [CacheAspect(duration: 10)]
-        [LogAspect(typeof(FileLogger))]
-        [PerformanceAspect(5)]
+        [PerformanceAspect(1)]
         public IDataResult<List<Car>> GetAll()
         {
-            Thread.Sleep(5000);
             return new SuccessDataResult<List<Car>>(_carDal.GetAll());
         }
 
-        //[CacheAspect]
         public IDataResult<Car> GetById(int id)
         {
             return new SuccessDataResult<Car>(_carDal.Get(c => c.Id == id));
         }
 
-        //[CacheAspect]
         public IDataResult<List<CarDetailDto>> GetCarDetails(Expression<Func<Car,bool>> filter = null)
         {
             return new SuccessDataResult<List<CarDetailDto>>(_carDal.GetCarDetails(filter));

@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspect.Autofac;
 using Business.Constants;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
@@ -38,6 +39,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.AddedRental);
         }
 
+        [SecuredOperation("admin")]
         public IResult Delete(Rental rental)
         {
             _rentalDal.Delete(rental);
@@ -68,7 +70,7 @@ namespace Business.Concrete
 
         private IResult CheckCarExistInRentalList(Rental rental)
         {
-            if (rental.ReturnDate == null && _rentalDal.GetCarDetails(I => I.CarId == rental.CarId).Count > 0)
+            if (rental.ReturnDate > DateTime.Now && _rentalDal.GetCarDetails(I => I.CarId == rental.CarId).Count > 0)
             {
                 return new ErrorResult(Messages.FailedRentalAddOrUpdate);
             }
