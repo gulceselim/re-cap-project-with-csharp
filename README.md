@@ -358,14 +358,12 @@ Status | BIT
 
 ## Files
 
-![Screenshot_2](https://user-images.githubusercontent.com/43720773/110237584-dce2ea00-7f4d-11eb-9059-306e377d9426.jpg)<br>
-![Screenshot_4](https://user-images.githubusercontent.com/43720773/110237586-deacad80-7f4d-11eb-8132-1461695c392a.jpg)<br>
-![Screenshot_5](https://user-images.githubusercontent.com/43720773/110237604-ef5d2380-7f4d-11eb-803c-579806c72530.jpg)<br>
-![Screenshot_6](https://user-images.githubusercontent.com/43720773/110237605-f08e5080-7f4d-11eb-821a-27dede64b071.jpg)<br>
-![Screenshot_7](https://user-images.githubusercontent.com/43720773/110237608-f2f0aa80-7f4d-11eb-954c-375e26394841.jpg)<br>
-![Screenshot_8](https://user-images.githubusercontent.com/43720773/110237609-f3894100-7f4d-11eb-9795-1fbe776f2acf.jpg)<br>
-![Screenshot_9](https://user-images.githubusercontent.com/43720773/110237610-f4ba6e00-7f4d-11eb-9ffe-2ab5bda1f860.jpg)
-
+![business](https://user-images.githubusercontent.com/43720773/114262894-14c8cb80-99eb-11eb-958b-c03af94b6de7.jpg)
+![core](https://user-images.githubusercontent.com/43720773/114262895-15616200-99eb-11eb-9bdc-2f1ab4c7f1f4.jpg)
+![core2](https://user-images.githubusercontent.com/43720773/114262896-15f9f880-99eb-11eb-8453-9e150fb0bf05.jpg)
+![data_access](https://user-images.githubusercontent.com/43720773/114262897-16928f00-99eb-11eb-8b42-ba5340c8c84d.jpg)
+![entities](https://user-images.githubusercontent.com/43720773/114262898-172b2580-99eb-11eb-9f06-b3ace4d13e07.jpg)
+![web_api](https://user-images.githubusercontent.com/43720773/114262899-172b2580-99eb-11eb-9707-b7a5492e23d9.jpg)
 
 
 ## License
